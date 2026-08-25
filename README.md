@@ -11,3 +11,4 @@
 ### Usage
 - Run `bootstrap.sh`. This clones/downloads necessary dependencies outside the ones highlighted above in the `Prerequisites` section.
 - Run `install.sh` this replaces the various dotfiles in your system with the ones in this repository.
+- Run `chsh -s "$(which zsh)"` to set zsh as the default shell
