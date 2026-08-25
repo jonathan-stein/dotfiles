@@ -59,3 +59,20 @@ if [[ ! -d "$ZSH_CUSTOM/plugins/zsh-syntax-highlighting" ]]; then
 else
     echo "==> zsh-syntax-highlighting already installed"
 fi
+
+echo "==> Setting up Vim"
+
+if ! command -v vim >/dev/null 2>&1; then
+    echo "ERROR: vim is not installed."
+    exit 1
+fi
+
+if [[ ! -f "$HOME/.vim/autoload/plug.vim" ]]; then
+    echo "==> Installing vim-plug"
+
+    curl -fLo "$HOME/.vim/autoload/plug.vim" \
+        --create-dirs \
+        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+else
+    echo "==> vim-plug already installed"
+fi
