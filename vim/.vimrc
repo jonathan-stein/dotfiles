@@ -7,6 +7,7 @@ call plug#begin()
 Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'tpope/vim-commentary'
 Plug 'prabirshrestha/vim-lsp'
 
 call plug#end()
