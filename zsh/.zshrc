@@ -1,7 +1,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 export FZF_BASE="$HOME/.fzf"
 
-ZSH_THEME="robbyrussell"
+ZSH_THEME="daivasmara"
 
 plugins=(
   git

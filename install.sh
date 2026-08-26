@@ -24,6 +24,8 @@ link_file() {
 }
 
 link_file "$DOTFILES/zsh/.zshrc" "$HOME/.zshrc"
+link_file "$DOTFILES/zsh/themes/daivasmara/daivasmara.zsh-theme" \
+          "$HOME/.oh-my-zsh/custom/themes/daivasmara.zsh-theme"
 link_file "$DOTFILES/vim/.vimrc" "$HOME/.vimrc"
 link_file "$DOTFILES/vim/ftplugin" "$HOME/.vim/ftplugin"
 link_file "$DOTFILES/tmux/.tmux.conf" "$HOME/.tmux.conf"
